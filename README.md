@@ -1,4 +1,4 @@
-# Tracciatore Transazioni
+# Registro Transazioni
 
 Un semplice programma Java per gestire le transazioni finanziarie. Permette di aggiungere, visualizzare, aggiornare e rimuovere transazioni, oltre a calcolare il totale.
 
