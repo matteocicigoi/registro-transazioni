@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.time.LocalDate;
+
 
 // gestione delle transazioni
 public class TransactionManager {
@@ -26,7 +28,7 @@ public class TransactionManager {
     }
 
     // modifica una transazione
-    public boolean updateTransaction(int id, String description, String category, boolean isIncome, double amount, String date){
+    public boolean updateTransaction(int id, String description, String category, boolean isIncome, double amount, LocalDate date){
         Transaction transaction  = getTransactionById(id);
         if(transaction != null) {
             transaction.setId(id);

@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 // classe che rappresenta una transazione
 public class Transaction {
     private int id;
@@ -5,10 +7,10 @@ public class Transaction {
     private String category;
     private boolean isIncome;
     private double amount;
-    private String date;
+    private LocalDate date;
 
     // costruttore
-    public Transaction(int id, String description, String category, boolean isIncome, double amount, String date) {
+    public Transaction(int id, String description, String category, boolean isIncome, double amount, LocalDate date) {
         setId(id);
         setDescription(description);
         setCategory(category);
@@ -33,7 +35,7 @@ public class Transaction {
     public void setAmount(double amount){
         this.amount = amount;
     }
-    public void setDate(String date){
+    public void setDate(LocalDate date){
         this.date = date;
     }
     // getter
@@ -52,7 +54,7 @@ public class Transaction {
     public double getAmount(){
         return amount;
     }
-    public String getDate(){
+    public LocalDate getDate(){
         return date;
     }
 
